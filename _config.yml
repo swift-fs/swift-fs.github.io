@@ -4,16 +4,17 @@
 
 # Site
 title: 无界
-subtitle: '技术无界，人生无界'
+subtitle: '技术无界'
 description: '无界个人博客'
 keywords:
 author: 无界
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://wujie.nextopenai.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -45,7 +46,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true

@@ -7,7 +7,7 @@ categories:
 keywords:
 description:
 top_img:
-comments:
+comments: true
 cover:
 toc:
 toc_number:
@@ -21,6 +21,6 @@ mathjax:
 katex:
 aplayer:
 highlight_shrink:
-aside:
+aside: true
 abcjs:
 ---

@@ -2,22 +2,21 @@
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
 # --------------------------------------
 
+# 导航栏配置
 nav:
-  logo: # image
+  logo: /assets/favicon.png
   display_title: true
   fixed: false # fixed navigation bar
 
-# Menu 目錄
+# 目录/菜单
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  网站收藏: /link/ || fas fa-link
+  图库: /gallery/ || fas fa-images
+  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -25,16 +24,17 @@ menu:
 highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_shrink: none # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
-code_word_wrap: false
+code_word_wrap: true
 
 # Social Settings (社交圖標設置)
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/swift-fs || Github 
+  fas fa-envelope: mailto:zuojiadazhongma@gmail.com || Email 
+  fas fa-rss: /atom.xml || RSS
 
 # Image (圖片設置)
 # --------------------------------------
@@ -45,7 +45,7 @@ favicon: /assets/favicon.png
 # Avatar (頭像)
 avatar:
   img: /assets/avatar.png
-  effect: false
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
@@ -54,7 +54,8 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+# 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+default_top_img: https://w.wallhaven.cc/full/jx/wallhaven-jxlwpm.jpg
 
 # The banner image of archive page
 archive_img:
@@ -81,7 +82,7 @@ cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
   aside_enable: true
-  archives_enable: true
+  archives_enable: false
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
   position: both
@@ -96,9 +97,9 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  enable: true
+  subtitle: '内容未找到'
+  # background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
@@ -149,13 +150,13 @@ toc:
   post: true
   page: false
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
   scroll_percent: true
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -230,8 +231,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 关注我
+      link: https://github.com/swift-fs
   card_announcement:
     enable: true
     content: This is my Blog
@@ -248,7 +249,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
     orderby: random # Order of tags, random/name/length
     order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
