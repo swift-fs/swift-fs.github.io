@@ -105,3 +105,19 @@ theme: butterfly
 deploy:
   type: ''
 
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+  
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0  
+
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true

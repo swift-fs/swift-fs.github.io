@@ -7,7 +7,7 @@ updated: 2023-11-06 15:40:04
 type:
 description:
 keywords:
-top_img:
+top_img: /assets/gallery_top_img.jpg
 mathjax:
 katex:
 aside:
