@@ -112,6 +112,7 @@ search:
   format: html
   
 feed:
+  enable: false
   type: atom
   path: atom.xml
   limit: 0  
